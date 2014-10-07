@@ -1,0 +1,31 @@
+{
+  "name": "git-format",
+  "version": "0.0.0",
+  "description": "Parse and pre-process the git --pretty=format: cli flag so we can parse the response to a JSON object.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec --ui bdd test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/3rd-Eden/git-format"
+  },
+  "keywords": [
+    "git",
+    "format",
+    "pretty",
+    "pre-process",
+    "json"
+  ],
+  "author": "Arnout Kazemier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/3rd-Eden/git-format/issues"
+  },
+  "homepage": "https://github.com/3rd-Eden/git-format",
+  "devDependencies": {
+    "assume": "0.0.x",
+    "mocha": "1.21.x",
+    "pre-commit": "0.0.x"
+  }
+}
