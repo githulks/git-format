@@ -31,6 +31,7 @@ function parser(line, format) {
   format = format.split(separator);
 
   var result = line.split(separator)
+    , results = result.length
     , length = format.length
     , data = {}
     , i = 0;
@@ -105,6 +106,13 @@ function parser(line, format) {
       case '%gE': data.reflog = data.reflog || {}; data.reflog.email_map = result[i]; break;
       case '%gs': data.reflog = data.reflog || {}; data.reflog.subject = result[i]; break;
     }
+  }
+
+  //
+  // Add extra unparsed data as `_` to the object so we don't throw it away.
+  //
+  if (results > length) {
+    data._ = result.slice(length);
   }
 
   return data;
