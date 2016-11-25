@@ -25,7 +25,7 @@
   "homepage": "https://github.com/3rd-Eden/git-format",
   "devDependencies": {
     "assume": "~1.4.1",
-    "mocha": "~3.1.2",
+    "mocha": "~3.2.0",
     "pre-commit": "~1.1.3"
   }
 }
